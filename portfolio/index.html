@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lithesh B — CSE Developer Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- top tab bar, styled like an editor's open-file tabs -->
+<header class="tabbar" id="tabbar">
+  <div class="tabbar-inner">
+    <div class="tabbar-brand"><span class="dot"></span> lithesh.dev</div>
+    <nav class="tabs" id="tabs">
+      <a href="#home" class="tab active">home.tsx</a>
+      <a href="#about" class="tab">about.md</a>
+      <a href="#skills" class="tab">skills.json</a>
+      <a href="#projects" class="tab">projects/</a>
+      <a href="#education" class="tab">education.log</a>
+      <a href="#certifications" class="tab">certs.yml</a>
+      <a href="#contact" class="tab">contact.sh</a>
+    </nav>
+    <a href="resume/resume.pdf" class="resume-btn" download="Lithesh-B-Resume.pdf">
+      <i class="fa-solid fa-arrow-down"></i> resume.pdf
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ================= HOME ================= -->
+  <section id="home" class="section hero">
+    <div class="line-rule" data-line="01"></div>
+    <div class="hero-grid">
+      <div class="hero-text">
+        <p class="kicker">// computer science engineering student</p>
+        <h1>Hi, I'm <span class="accent-blue">Lithesh</span><span class="accent-green">.B</span></h1>
+        <p class="hero-role">
+          <span id="typed"></span><span class="caret">|</span>
+        </p>
+        <p class="hero-desc">
+          I build websites, ship small applications, and enjoy taking a problem
+          apart until the solution is obvious. Currently sharpening my C++, Python
+          and web development skills — one project at a time.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View my projects <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="resume/resume.pdf" class="btn btn-ghost" download="Lithesh-B-Resume.pdf">Download resume <i class="fa-solid fa-download"></i></a>
+        </div>
+        <div class="hero-social">
+          <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="mailto:lithesh@example.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-panel">
+        <div class="portrait-card">
+          <div class="portrait-glow"></div>
+          <img
+            class="portrait-image"
+            src="images/WhatsApp Image 2026-09-11 at 9.17.49 AM.jpeg"
+            alt="Lithesh portrait"
+          >
+          <div class="portrait-badge">
+            <span class="badge-dot"></span>
+            Available for work
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about" class="section">
+    <div class="line-rule" data-line="02"></div>
+    <h2 class="section-title">about.md</h2>
+    <div class="about-grid">
+      <p class="about-text">
+        I'm a Computer Science Engineering student who likes turning ideas into
+        working software. I enjoy building practical projects, reading other
+        people's code to see how they solved a problem, and picking up new tools
+        when a project calls for them. Outside of coursework, I spend most of my
+        time practicing data structures and algorithms and building full front-end
+        projects to get comfortable with real-world interfaces.
+      </p>
+      <div class="stat-rail">
+        <div class="stat"><span class="stat-num">5+</span><span class="stat-label">Projects built</span></div>
+        <div class="stat"><span class="stat-num">C/C++</span><span class="stat-label">Core languages</span></div>
+        <div class="stat"><span class="stat-num">Python</span><span class="stat-label">Scripting & logic</span></div>
+        <div class="stat"><span class="stat-num">Web</span><span class="stat-label">Frontend development</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SKILLS ================= -->
+  <section id="skills" class="section">
+    <div class="line-rule" data-line="03"></div>
+    <h2 class="section-title">skills.json</h2>
+    <div class="skills-grid">
+
+      <div class="skill-card">
+        <h3><i class="fa-solid fa-code"></i> Programming</h3>
+        <ul class="chip-list">
+          <li class="chip">C</li>
+          <li class="chip">C++</li>
+          <li class="chip">Python</li>
+          <li class="chip">JavaScript</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h3><i class="fa-solid fa-globe"></i> Web Development</h3>
+        <ul class="chip-list">
+          <li class="chip">HTML</li>
+          <li class="chip">CSS</li>
+          <li class="chip">JavaScript</li>
+          <li class="chip">Bootstrap</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h3><i class="fa-solid fa-toolbox"></i> Tools</h3>
+        <ul class="chip-list">
+          <li class="chip">Git & GitHub</li>
+          <li class="chip">VS Code</li>
+          <li class="chip">MS Word</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section id="projects" class="section">
+    <div class="line-rule" data-line="04"></div>
+    <h2 class="section-title">projects/</h2>
+    <p class="section-sub">A few things I've built and shipped.</p>
+
+    <div class="project-grid">
+
+      <article class="project-card">
+        <div class="project-thumb" data-label="car-rental.png"><i class="fa-solid fa-car"></i></div>
+        <div class="project-body">
+          <h3>Car Rental Website</h3>
+          <p>A responsive car rental platform where users can browse available
+            cars, view details, and manage bookings.</p>
+          <ul class="tag-list">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://ql4g6dvl-8080.inc1.devtunnels.ms/" target="_blank" rel="noopener">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Live demo
+            </a>
+            <a href="#" target="_blank" rel="noopener">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+        </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-thumb" data-label="ecommerce.png"><i class="fa-solid fa-cart-shopping"></i></div>
+        <div class="project-body">
+          <h3>E-Commerce Website</h3>
+          <p>An online shopping platform with product browsing, cart management,
+            and backend integration for orders.</p>
+          <ul class="tag-list">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Backend</li>
+          </ul>
+          <div class="project-links">
+            <a href="http://localhost:8080" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live demo</a>
+            <a href="#" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-thumb" data-label="study.png"><i class="fa-solid fa-chart-column"></i></div>
+        <div class="project-body">
+          <h3>Employee Engagement Study</h3>
+          <p>A research-based project analyzing the factors that influence
+            employee engagement and job satisfaction.</p>
+          <ul class="tag-list">
+            <li>Research</li><li>Data Analysis</li>
+          </ul>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Report</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ================= EDUCATION ================= -->
+  <section id="education" class="section">
+    <div class="line-rule" data-line="05"></div>
+    <h2 class="section-title">education.log</h2>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <h3>Bachelor of Engineering — Computer Science Engineering</h3>
+          <p class="timeline-place">Easwari Engineering College, Chennai</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <h3>Higher Secondary Education</h3>
+          <p class="timeline-place">Sacred Heart Matric Hr. Sec. School, Chennai</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CERTIFICATIONS ================= -->
+  <section id="certifications" class="section">
+    <div class="line-rule" data-line="06"></div>
+    <h2 class="section-title">certs.yml</h2>
+
+    <div class="cert-grid">
+      <div class="cert-card">
+        <i class="fa-solid fa-trophy"></i>
+        <h3>Hackathon Participation</h3>
+        <p>HACK RUSH</p>
+      </div>
+      <div class="cert-card">
+        <i class="fa-solid fa-certificate"></i>
+        <h3>Programming Certification</h3>
+        <p>Add the issuing platform and year here.</p>
+      </div>
+      <div class="cert-card">
+        <i class="fa-solid fa-laptop-code"></i>
+        <h3>Web Development Certification</h3>
+        <p>Add the issuing platform and year here.</p>
+      </div>
+      <div class="cert-card">
+        <i class="fa-solid fa-medal"></i>
+        <h3>Coding Achievement</h3>
+        <p>Add the competition and result here.</p>
+      </div>
+    </div>
+    <p class="cert-note">// swap these placeholders for your real certificates only.</p>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="section">
+    <div class="line-rule" data-line="07"></div>
+    <h2 class="section-title">contact.sh</h2>
+    <p class="section-sub">Have a role, a project, or just want to say hi? Send a message.</p>
+
+    <div class="contact-grid">
+      <form class="contact-form" id="contactForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Tell me a bit about it..." required></textarea>
+
+        <button type="submit" class="btn btn-primary">Send message <i class="fa-solid fa-paper-plane"></i></button>
+        <p class="form-status" id="formStatus"></p>
+      </form>
+
+      <div class="contact-side">
+        <a class="contact-link" href="mailto:litheshb8@gmail.com">
+          <i class="fa-solid fa-envelope"></i>
+          <span>litheshb8@gmail.com</span>
+        </a>
+        <a class="contact-link" href="https://www.linkedin.com/in/lithesh-b-326a60381" target="_blank" rel="noopener">
+          <i class="fa-brands fa-linkedin"></i>
+          <span>linkedin.com/in/lithesh</span>
+        </a>
+        <a class="contact-link" href="https://github.com/litheshb8-cell" target="_blank" rel="noopener">
+          <i class="fa-brands fa-github"></i>
+          <span>github.com/lithesh</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>&copy; <span id="year"></span> Lithesh B. Built with HTML, CSS & JavaScript.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
