@@ -2,5 +2,11 @@
   "buildCommand": "",
   "installCommand": "",
   "framework": "static",
-  "public": "portfolio"
+  "public": "portfolio",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
 }
